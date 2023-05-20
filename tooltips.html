@@ -1,0 +1,43 @@
+<html>
+<head>
+<style>
+.tooltip {
+     positon: relative;
+     display: inline-block;
+     border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color:#fff;
+      text-align: center;
+      border-radious: 6px;
+      padding: 5px 0;
+
+      /*Position of tooltip*/
+      position: absolute;
+      z-index: 1;
+     top: 5px;
+     bottom: 100%;
+     left: 50%;
+     margin-left: -60px; 
+     border-color: black transparent transparent transparent;   
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+
+}
+
+
+</style>
+</head>
+<body style="text-align:center;">
+<h2> dfjkdjfkldjfjdkjfdf </h2>
+<div class="tooltip"> Hi Hello 
+	<span class="tooltiptext"> aaaaaaaa </span>
+</div>
+</body>
+</html>

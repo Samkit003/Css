@@ -1,0 +1,193 @@
+<html>
+<head>
+<style>
+img#aa{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px;
+  opacity: 0.5;
+}
+img#aa:hover{
+     box-shadow: 0 0 2px 1px rgba(0,140,186,0.5);
+}
+
+img#bb{
+    #max-width: 100%;
+    #height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.main{
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 25px;
+}
+div.sub{
+    text-align: center:
+    padding: 10px 20px;
+}
+
+.t1{
+   position: relative;
+   width: 50%;
+}
+.image{
+   display: block;
+   width: 50%;
+   height: auto;
+}
+.t2{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 50%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: #008CBA;
+}
+.t1:hover .t2{
+    opacity: 1;
+}
+.t3{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<h2> thumbnail Image </h2>
+<img src="M.jpg" id="aa" alt="Paris" width="300px"> <br> <br>
+
+<img src="N.jpg" id="bb" alt="Beach" width="300px" height="300px">
+
+<h2> Example </h2>
+<div class="main">
+     <img src="O.jpg" alt="beach" style="width: 100%">
+     <div class="sub">
+     <p> Beach </p>
+     </div>
+</div>
+
+<div class="main">
+     <img src="M.jpg" alt="beach" style="width: 100%">
+     <div class="sub">
+     <p> Beach1 </p>
+     </div>
+</div>
+
+<div class="t1">
+    <img src="1.jpg" alt="male" class="image">
+    <div class="t2">
+          <div class="t3"> Hello World </div>
+    </div>
+</div>
+
+
+<h2>Responsive Image Gallery</h2>
+
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="2.jpg">
+      <img src="2.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="3.jpg">
+      <img src="3.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="4.jpg">
+      <img src="4.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="5.jpg">
+      <img src="5.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+
+</div>
+</body>
+</html>

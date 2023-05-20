@@ -1,0 +1,96 @@
+<html>
+<head>
+<style>
+div {
+   width: 100px;
+   height: 50px;
+   background-color: red;
+   position: relative;
+   animation: example 5s infinite;
+}
+
+@keyframes example {
+     from {left: 0px;}
+     to {left: 500px;}
+
+}
+#div1{
+   width: 100px;
+   height: 100px;
+   background-color: red;
+   animation-name: e1;
+   animation-duration: 4s;
+   
+}
+
+@keyframes e1 {
+     0% {background-color: red;}
+     25% {background-color: green;}
+     50% {background-color: blue;}
+     75% {background-color: yellow;}
+     100% {background-color: gray;}
+}
+
+#div2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: e2;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+}
+
+@keyframes e2 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+
+}
+
+#div3 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: e3;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-delay: 1s;
+    animation-direction: reverse;
+}
+
+@keyframes e3 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+#div4{animation-timing-function: linear;}
+#div5{animation-timimg-function: ease;}
+#div6{animation-timing-function: ease-in;}
+#div7{animation-timing-function: ease-out;}
+#div8{animation-timing-function: ease-in-out;}
+
+
+</style>
+</head>
+<body>
+<h1> Css Animation </h1>
+<div> <b> A1 </div> <br>
+<div id="div1">A2 </div> <br>
+<div id="div2"> A3</div> <br>
+<div id="div3"> A4 </div> <br> <br> <br> <br> <br><br><br><br><br><br><br>
+<div id="div4"> linear </div> <br>
+<div id="div5">ease</div> <br>
+<div id="div6">ease-in</div><br>
+<div id="div7">ease-out</div><br>
+<div id="div8">ease-in-out</div><br>
+</body>
+</html>
